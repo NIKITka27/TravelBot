@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1251"/>
+    <title>Add Description</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div class="container my-5">
+    <h3> Add Description</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-10">
+                <form action="#" th:action="@{/add}" th:object="${travel}" method="post">
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="country" class="col-form-label">Country</label> <input type="text" th:field="*{country}" class="form-control" id="country" placeholder="Country"> <span th:if="${#fields.hasErrors('country')}" th:errors="*{country}" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="city" class="col-form-label">City</label> <input type="text" th:field="*{city}" class="form-control" id="city" placeholder="City"> <span th:if="${#fields.hasErrors('city')}" th:errors="*{city}" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-8">
+                            <label for="cityDescription" class="col-form-label">City Description</label> <input type="text" th:field="*{cityDescription}" class="form-control" id="cityDescription" placeholder="City Description"> <span th:if="${#fields.hasErrors('cityDescription')}" th:errors="*{cityDescription}" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="submit" class="btn btn-primary" value="Add Description">
+                        </div>
+
+                        <div class="form-group col-md-8"></div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
