@@ -1,6 +1,6 @@
 ## TravelTelegramBot
 
-### Для добавление, обнавления и удаления городов прошу перейти на этот [сайт](https://traveltelrgrambot.herokuapp.com/travel).
+### Для добавление, обнавления и удаления городов прошу перейти на этот [сайт](https://traveltelergrambot.herokuapp.com/travel).
  
 ### Затем перейти в [telegram](http://t.me/TravelTaskBot) и ввести интересующий вас город.
 
